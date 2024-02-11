@@ -1,0 +1,36 @@
+<mat-toolbar>
+    <div class="menu-icon" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+    </div>
+    <!-- Left Section -->
+    <div class="left-section">
+        <span class="nav-text">Download app</span>
+        <span class="nav-text">Become a Partner</span>
+    </div>
+
+    <!-- Center Section -->
+    <div class="center-section">
+        <span class="nav-title">Frontend</span>
+        <span class="test-word">Test</span>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+        <button mat-icon-button aria-label="Search">
+            <mat-icon>search</mat-icon>
+        </button>
+        <button mat-button >Sign Up</button>
+        <button class="login-button" mat-raised-button > Login </button>
+
+    </div>
+    <mat-drawer-container [hasBackdrop]="true" class="sidenav-container" autosize [ngClass]="{'d-none': !drawer.opened}">
+        <mat-drawer #drawer class="sidenav" mode="over">
+            <div class="sidenav-content">
+                <button mat-stroked-button color="primary">Download app</button>
+                <button mat-stroked-button color="primary">Become a Partner</button>
+                <button mat-stroked-button color="primary">Sign Up</button>
+                <button mat-button color="accent">Login</button>
+            </div>
+        </mat-drawer>
+    </mat-drawer-container>
+</mat-toolbar>

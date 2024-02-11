@@ -1,0 +1,22 @@
+
+<div class="filter-container">
+    <mat-card class="search-container">
+        <mat-card-content class="search-content">
+            <div class="input-group">
+                <div class="search-input-container">
+                    <mat-form-field appearance="outline" class="search-input">
+                        <mat-icon class="search-icon" matPrefix>search</mat-icon>
+                        <input matInput placeholder="Search for a restaurant" [formControl]="searchInput" class="search-input-el"/>
+                    </mat-form-field>
+                </div>
+                <div class="divider"></div>
+                <input #placesRef="ngx-places" ngx-gp-autocomplete  (onAddressChange)="handleAddressChange($event)"
+                class="places-input"/>
+    
+            </div>
+    
+        </mat-card-content>
+    </mat-card>
+    <button class="search-button" mat-raised-button (click)="emitSearch(searchInput.value)"> Search </button>
+    
+</div>

@@ -1,0 +1,122 @@
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+
+    .search-container {
+        width: 40%;
+        border-radius: 4px;
+        padding-inline: 2px;
+
+        .search-content {
+            display: flex;
+            align-items: center;
+            padding: 0 !important;
+
+            .input-group {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 40px;
+
+                .search-input-container {
+                    display: flex;
+                    align-items: center;
+                    width: 70%;
+
+                    .search-input {
+                        flex: 1;
+
+                        .search-icon {
+                            margin-right: 8px;
+                            font-size: 24px;
+                            color: #ccc;
+                        }
+                        .search-input-el::placeholder {
+                            font-size: 12px;
+                        
+                        }
+                    }
+
+                }
+
+                .divider {
+                    display: block;
+                    width: 1px;
+                    height: 24px;
+                    background-color: #ccc;
+                    margin: 0 16px;
+                }
+
+                .places-input {
+                    border: none;
+                }
+
+            }
+
+        }
+
+    }
+
+    .search-button {
+        background-color: #E92051;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Remove border and box-shadow from the mat-form-field */
+.mat-form-field-appearance-outline .mat-form-field-outline-start,
+.mat-form-field-appearance-outline .mat-form-field-outline-end {
+    border: none;
+}
+
+:host::ng-deep {
+
+    .mdc-notched-outline__leading,
+    .mdc-notched-outline__notch,
+    .mdc-notched-outline__trailing {
+        border: none !important;
+    }
+
+    .mat-mdc-form-field-subscript-wrapper {
+        display: none;
+    }
+
+    .mat-form-field-underline {
+        display: none;
+        /* Hide the underline */
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .search-container {
+        width: 100%;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .places-input {
+        width: inherit;
+    }
+
+}

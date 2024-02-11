@@ -1,0 +1,8 @@
+<div class="ads-container">
+    <h1 class="ads-title">Discover what’s new</h1>
+    <div class="ads-content">
+        <div class="image-list">
+            <img *ngFor="let ads of $adsList | async" [src]="ads.url"  class="ad-image" />
+        </div>
+    </div>
+</div>

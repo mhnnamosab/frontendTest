@@ -1,0 +1,9 @@
+<div class="cuisinesList-container">
+    <h4 class="cuisines-title">Cuisines Categories</h4>
+    <div class="buttons-list">
+        <button class="cuisine-button flexible-button" mat-raised-button > Show All, I’m Flexible </button>
+        <ng-container *ngFor="let cuisine of $cuisines | async;let i=index">
+            <button class="cuisine-button" mat-raised-button > {{ cuisine.name }}</button>
+        </ng-container>
+      </div>
+</div>

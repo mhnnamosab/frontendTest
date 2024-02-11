@@ -1,0 +1,17 @@
+<div class="featured-container">
+    <h1 class="featured-title">Featured</h1>
+    <div class="featured-content">
+        <div class="image-list">
+            <ng-container *ngFor="let f of $featuredList | async">
+                <div class="img-gradient">
+                    <img [src]="f.image[0].url" alt="featured Image 1" class="featured-image" />
+                    <div class="image-text">
+                        <p>{{f.name}}</p>
+                        <p><small>{{f.type}}</small></p>
+                    </div>
+                </div>
+            </ng-container>
+            
+        </div>
+    </div>
+</div>

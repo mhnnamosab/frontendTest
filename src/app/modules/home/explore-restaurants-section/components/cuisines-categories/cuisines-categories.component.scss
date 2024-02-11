@@ -1,0 +1,26 @@
+.cuisinesList-container {
+    padding-inline: 15%;
+    margin-top: 12px;
+
+    .buttons-list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        .flexible-button {
+            background-color: #E92051;
+            color: white;
+        }
+
+        .cuisine-button {
+            border-radius: 10px !important;
+        }
+    }
+
+    .cuisines-title {
+        text-align: center;
+        color: gray;
+        opacity: .5;
+    }
+}

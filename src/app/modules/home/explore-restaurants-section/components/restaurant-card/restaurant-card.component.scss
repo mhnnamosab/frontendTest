@@ -1,0 +1,53 @@
+.rest-card {
+    padding: 6px 6px 0px 6px;
+    border-radius: 14px;
+
+    .card-image {
+        width: 15em;
+        height: 15em;
+        object-fit: contain;
+    }
+
+    .rest-card-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-top: 8px;
+
+        .rest-card-title {
+            h3 {
+                margin-block: auto;
+            }
+
+            small {
+                color: #7F7F7F;
+            }
+        }
+
+        .rest-card-status {
+            display: flex;
+            align-items: center;
+
+            .mat-icon {
+                font-size: 14px;
+                text-align: center;
+                position: relative;
+                top: 6px;
+                color: #36D83C;
+            }
+        }
+        .rest-card-status-online {
+            .mat-icon {
+                color: #36D83C;
+            }
+        }
+
+        .rest-card-status-offline {
+            color: #7F7F7F;
+            .mat-icon {
+                color: #7F7F7F;
+            }
+        }
+    }
+}

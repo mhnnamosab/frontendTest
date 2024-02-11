@@ -1,0 +1,33 @@
+.ads-container {
+  width: 100%;
+  margin: auto;
+
+  .ads-title {
+    text-align: center;
+  }
+
+  .ads-content {
+    overflow-x: auto;
+
+    .image-list {
+      display: flex;
+      gap: 16px;
+      padding: 16px;
+
+      .ad-image {
+        width: auto;
+        height: 26em;
+        object-fit: cover;
+        background-color: #FDFAE5;
+        border-radius: 20px;
+      }
+
+      .ad-image:hover {
+        box-shadow: -2px 5px 10px #e0e0e0;
+        -moz-box-shadow: -2px 5px 10px #e0e0e0;
+        -webkit-box-shadow: -2px 5px 10px #e0e0e0;
+
+      }
+    }
+  }
+}

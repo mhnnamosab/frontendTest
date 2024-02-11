@@ -1,0 +1,15 @@
+<div class="explore-container">
+    <div class="explore-title">
+        <h1>Explore Resturant</h1>
+        <p>Here’s our fine restaurants collection, Enjoy!</p>
+    </div>
+    <app-search-input (search)="onSearch($event)"></app-search-input>
+    <app-cuisines-categories></app-cuisines-categories>
+    <app-restaurants-result [resturants]="resturants"></app-restaurants-result>
+    <div class="spinner-container">
+        <mat-spinner *ngIf="loading"></mat-spinner>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,19 @@
+.explore-container{
+    width: 100%;
+    margin: auto;
+    background-color: #FFF5F5;
+    padding-block: 2%;
+    .explore-title {
+        text-align: center;
+    }
+    
+    .spinner-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        mat-spinner  {
+            width: 50px !important;
+            height: 50px !important;
+        }
+    }
+}

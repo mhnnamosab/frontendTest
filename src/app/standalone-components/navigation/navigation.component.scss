@@ -1,0 +1,107 @@
+.mat-toolbar {
+  background: linear-gradient(to bottom, #050505 -20%, transparent 100%);
+  position: fixed;
+}
+
+.left-section{
+  margin-right: auto;
+}
+.right-section{
+  margin-left: auto;
+}
+.left-section,
+.right-section {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-inline: 5%;
+}
+.center-section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.nav-text {
+  margin-right: 16px;
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.test-word {
+  color: red;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  /* Initially hide the menu icon */
+  cursor: pointer;
+  margin-right: 16px;
+  color: white !important;
+}
+
+.additional-details {
+  display: none;
+  /* Initially hide additional details */
+}
+
+.sidenav-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:white;
+  height: 100%;
+  width: 25%;
+  display: none;
+  .sidenav{
+    width: 100%;
+  }
+}
+
+.sidenav-content {
+  display: flex;
+  flex-direction: column;
+}
+.d-none{
+  display: none !important;
+}
+.login-button {
+  background-color: #E92051 !important;
+  color: white  !important;
+}
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .menu-icon,
+  .sidenav-container {
+    display: block;
+  }
+  .sidenav-container {
+    width: 75%;
+  }
+  .left-section,
+  .center-section,
+  .right-section {
+    display: none;
+  }
+
+  .additional-details {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 56px;
+    /* Adjust top position based on your toolbar's height */
+    left: 0;
+    background-color: white;
+    /* Background color for additional details */
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}

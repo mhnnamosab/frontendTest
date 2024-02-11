@@ -1,0 +1,18 @@
+<mat-card class="rest-card">
+    <img mat-card-image class="card-image" [src]="restaurant?.logo?.url" alt="Photo of a Shiba Inu">
+    <mat-card-content style="padding-inline: 5px;">
+        <div class="rest-card-content">
+            <div class="rest-card-title">
+                <h4 matTooltip="{{restaurant.name}}">
+                    {{(restaurant?.name?.length >16 )? (restaurant.name | slice:0:16)+'...' : (restaurant.name) }}
+                </h4>
+                <small matTooltip="{{restaurant.address}}" >{{(restaurant.address?.length>20)? (restaurant.address | slice:0:20)+'...' : (restaurant.address) }}</small>
+            </div>
+            <div class="rest-card-status" [ngClass]="{'rest-card-status-offline': !restaurant.online ,'rest-card-status-online': restaurant.online}">
+                online
+                <mat-icon>brightness_1</mat-icon>
+            </div>
+        </div>
+    </mat-card-content>
+  </mat-card>
+  
